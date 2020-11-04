@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.mini_container {
+  width: 100%;
+  height: 100vh;
+  background-color: grey;
+}
+main {
+  display: flex;
+  height: calc(100% - 60px);
+  background-color: grey;
+  overflow-y: hidden;
+}
+.aside {
+  width: 250px;
+  padding: 20px;
+  background-color: yellow;
+  overflow-y: hidden;
+}
+.main_playlist {
+  width: calc(100% - 250px);
+  padding: 20px;
+  background-color: blue;
+  overflow-y: scroll;
+}
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+}
