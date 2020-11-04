@@ -9,26 +9,254 @@
   height: 100vh;
   background-color: grey;
 }
+/* main */
 main {
   display: flex;
-  height: calc(100% - 60px);
+  height: calc(100% - 50px);
   background-color: grey;
   overflow-y: hidden;
+  color: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
 }
+/* aside */
 .aside {
-  width: 250px;
-  padding: 20px;
-  background-color: yellow;
+  width: 230px;
+  background-color: black;
   overflow-y: hidden;
 }
-.main_playlist {
-  width: calc(100% - 250px);
-  padding: 20px;
-  background-color: blue;
+.aside .logo {
+  padding: 20px 0 10px 20px;
+}
+.aside .logo img {
+  width: 50%;
+}
+#search_bar {
+  list-style: none;
+  margin-bottom: 20px;
+}
+#search_bar li {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #B3B3B3;
+}
+#search_bar li:hover {
+  color: #FFFFFF;
+  cursor: pointer;
+  border-left: 2px solid #1DB954;
+}
+#search_bar li i {
+  font-size: 17px;
+  margin-right: 8px;
+  padding-left: 20px;
+}
+.list {
+  padding-left: 20px;
+}
+
+.list ul {
+  list-style: none;
   overflow-y: scroll;
+}
+.list ul li {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #B3B3B3;
+}
+.list ul li a {
+  color: #B3B3B3;
+  text-decoration: none;
+}
+.list ul li a:hover {
+  color: #FFFFFF;
+}
+.list ul li i {
+  font-size: 17px;
+  background-color: #B3B3B3;
+  color: black;
+  padding: 10px;
+  margin-right: 10px;
+}
+.list ul li i:hover {
+  background-color: #FFFFFF;
+}
+.account {
+  padding: 0 20px 5px 20px;
+  width: 230px;
+  background-color: black;
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+}
+.account p a {
+  color: #B3B3B3;
+  text-decoration: none;
+  font-size: 13px;
+}
+.account p a:hover {
+  color: #FFFFFF;
+}
+.account p a i {
+  margin-right: 15px;
+}
+.account h4 {
+  border-top: 1px solid #B3B3B3;
+  margin-top: 8px;
+  padding-top: 10px;
+}
+.account h4:hover {
+  cursor: pointer;
+}
+.account h4 i {
+  color: #FFFFFF;
+  background-color:#B3B3B3;
+  border-radius: 50%;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* aside */
+
+/* main */
+.main_playlist {
+  width: calc(100% - 230px);
+  padding: 20px;
+  background-color: #141922;
+  overflow-y: scroll;
+}
+.upgrade {
+  position: fixed;
+  top: 0;
+  left: 230px;
+  width: calc(100% - 230px);
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.upgrade:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.upgrade button {
+  float: right;
+  padding: 10px 25px 10px 25px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 15px;
+  margin: 10px 20px 10px 0;
+  border-color: #FFFFFF;
+  transition: transform .2s;
+}
+.upgrade button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.choice {
+  margin-top: 60px;
+}
+.choice ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.choice ul li {
+  margin-left: 12px;
+}
+.choice ul li a {
+  text-decoration: none;
+  color: #B3B3B3;
+}
+.choice ul li a:hover {
+  color: #FFFFFF;
+}
+h2 {
+  font-size: 28px;
+}
+.song_played {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.song_played .box {
+  /* height: 180px; */
+  width: 155px;
+  position: relative;
+  text-align: center;
+}
+
+.song_played .box p {
+  font-size: 13px;
+  color: #B3B3B3;
+}
+.song_played .box img {
+  width: 100%;
+  height: 150px;
+}
+
+.layover {
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.layover:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  opacity: 0.9;
+}
+.layover i {
+  width: 100%;
+  height: 150px;
+  font-size: 50px;
+  color:rgba(0, 0, 0, 0);
+  line-height: 150px;
+}
+.layover i:hover {
+  color: #FFFFFF;
+}
+
+.second_title h2 {
+  font-size: 25px;
+  margin-top: 50px;
+}
+.my_selection {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.my_selection .box {
+  /* height: 180px; */
+  width: 155px;
+  position: relative;
+  text-align: center;
+}
+.my_selection .box h4 {
+  margin: 5px 0 5px 0;
+}
+.my_selection .box p {
+  font-size: 13px;
+  color: #B3B3B3;
+}
+.my_selection .box img {
+  width: 100%;
+  height: 150px;
 }
 footer {
   width: 100%;
-  height: 60px;
-  background-color: black;
+  height: 50px;
+  background-color: yellow;
+  position: relative;
+  z-index: 99;
+}
+
+@media screen and (max-height: 400px) {
+  .account {
+    display: none;
+  }
 }
