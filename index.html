@@ -16,15 +16,18 @@
         <!-- aside -->
         <section class="aside">
           <div class="nav_top">
+            <div class="logo_2">
+              <i class="fab fa-spotify"></i>
+            </div>
             <div class="logo">
               <img src="img/Spotify_Logo_RGB_White.png" alt="">
             </div>
             <!-- nav -->
             <nav>
               <ul id="search_bar">
-                <li><i class="fas fa-home"></i>Home</li>
-                <li><i class="fas fa-search"></i>Cerca</li>
-                <li><i class="fas fa-headphones-alt"></i>La tua libreria</li>
+                <li><i class="fas fa-home"></i><span>Home</span></li>
+                <li><i class="fas fa-search"></i><span>Cerca</span></li>
+                <li><i class="fas fa-headphones-alt"></i><span>La tua libreria</span></li>
               </ul>
             </nav>
             <!-- nav -->
@@ -46,8 +49,8 @@
           </div>
           <div class="nav_bottom">
             <div class="account">
-              <p><a href="#"><i class="far fa-arrow-alt-circle-down"></i>Installa l'app</a></p>
-              <h4><i class="fas fa-user-alt"></i>Jonh Doe</h4>
+              <p><a href="#"><i class="far fa-arrow-alt-circle-down"></i><span>Installa l'app</span></a></p>
+              <h4><i class="fas fa-user-alt"></i><span>Jonh Doe</span></h4>
             </div>
           </div>
         </section>
@@ -81,60 +84,72 @@
           </div>
           <div class="song_played">
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/capa.jpg" alt="">
               </div>
-              <img src="img/capar.jpg" alt="">
               <div class="didascalia">
                 <h4>Caparezza</h4>
                 <p>Il meglio</p>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/red.jpg" alt="">
               </div>
-              <img src="img/redhotc.jpg" alt="">
               <div class="didascalia">
                 <h4>Red Hot Chili Peppers</h4>
                 <p>By the Way</p>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/pinkf.jpg" alt="">
               </div>
-              <img src="img/dark.jpg" alt="">
               <div class="didascalia">
                 <h4>Pink Floyd</h4>
                 <p>The dark side of the Moon</p>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/news.jpg" alt="">
               </div>
-              <img src="img/queen.jpg" alt="">
               <div class="didascalia">
                 <h4>Queen</h4>
                 <p>News of the Wordl</p>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/unnamed.jpg" alt="">
               </div>
-              <img src="img/deandrè.jpg" alt="">
               <div class="didascalia">
                 <h4>Fabrizio De Andrè</h4>
                 <p>Il meglio</p>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/uncha.jpg" alt="">
               </div>
-              <img src="img/uncharted.jpg" alt="">
               <div class="didascalia">
                 <h4>Uncharted</h4>
                 <p>Nathan Drake theme song</p>
@@ -151,19 +166,23 @@
           </div>
           <div class="my_selection">
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/rock.jpg" alt="">
               </div>
-              <img src="img/dailymix.jpg" alt="">
               <div class="didascalia">
                 <h4>Daily Mix</h4>
               </div>
             </div>
             <div class="box">
-              <div class="layover">
-                <i class="far fa-play-circle"></i>
+              <div class="min_box">
+                <div class="layover">
+                  <i class="far fa-play-circle"></i>
+                </div>
+                <img src="img/punk.jpg" alt="">
               </div>
-              <img src="img/cover.jpg" alt="">
               <div class="didascalia">
                 <h4>Release Radar</h4>
               </div>
@@ -197,14 +216,14 @@
 
       <!-- footer -->
       <footer>
-        <div class="footer_right">
+        <div class="footer_left">
           <div class="song_information">
             <div class="song_image">
               <img src="img/hurricane.png" alt="">
             </div>
             <div class="song_name">
               <h4>Hurricane</h4>
-              <p>Brano nome</p>
+              <p><a href="#">Brano nome</a></p>
             </div>
           </div>
           <div class="fonts">
@@ -226,6 +245,7 @@
               <span>0.25</span>
               <div class="bar">
                 <div class="middle_bar">
+                  <i class="fas fa-circle"></i>
                 </div>
               </div>
               <span>4.35</span>
@@ -235,7 +255,14 @@
 
         <div class="third_block">
           <div class="settings">
-
+            <i class="fas fa-list"></i>
+            <i class="fas fa-desktop"></i>
+            <i class="fas fa-volume-up"></i>
+            <div class="bar">
+              <div class="middle_bar">
+                <i class="fas fa-circle"></i>
+              </div>
+            </div>
           </div>
         </div>
 
